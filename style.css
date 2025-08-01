@@ -148,7 +148,7 @@ ul {
     align-items: center;
     width: 100%;
     padding: 10px 40px;
-    color: var(--color-white);
+    color: #000;
     background-color: var(--color-button);
     font-size: 16px;
 }
@@ -159,4 +159,23 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.button-add, .button-draw {
+    background: transparent;
+    color: var(--color-accent);
+    border: 1px solid var(--color-button-hover);
+    transition: all 0.3s;
+}
+
+.button-add:hover, .button-draw:hover {
+    background: var(--color-button-hover);
+    color: #000;
+}
+
+.button-add {
+    transition: transform 0.2s;
+}
+.button-add:hover {
+    transform: scale(1.05);
 }
